@@ -1,6 +1,6 @@
 # ARWG Agent Adoption, Accuracy & Reliability Survey
 
-This is the platform-neutral review source for the Accuracy & Reliability Working Group survey. It records the agreed 15-question survey and the behavior a fielded survey must preserve, independent of implementation platform.
+This is the platform-neutral review source for the AAIF/Agentic AI Foundation Accuracy & Reliability Working Group survey. It records the agreed 15-question survey and the behavior a fielded survey must preserve, independent of implementation platform.
 
 ## Review status
 
