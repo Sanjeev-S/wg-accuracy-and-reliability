@@ -1,10 +1,10 @@
 # ARWG Agent Adoption, Accuracy & Reliability Survey
 
-This is the platform-neutral review source for the AAIF/Agentic AI Foundation Accuracy & Reliability Working Group survey. It records the agreed 15-question survey and the behavior a fielded survey must preserve, independent of implementation platform.
+This is the platform-neutral review source for the AAIF/Agentic AI Foundation Accuracy & Reliability Working Group survey. It records the current 16-question survey and the behavior a fielded survey must preserve, independent of implementation platform.
 
 ## Review status
 
-- The question stems, answer choices, factor rows, and ordered scales below reproduce the locked baseline.
+- The question stems, answer choices, factor rows, and ordered scales below incorporate the current review decisions.
 - Reviewers should flag unclear wording, missing response paths, analytical problems, or implementation risks in line comments. Proposed content changes should be discussed explicitly rather than silently incorporated.
 - Survey-platform selection, privacy and aggregation language, analysis procedures, and deployment configuration are outside this document's current scope.
 
@@ -16,17 +16,35 @@ This is the platform-neutral review source for the AAIF/Agentic AI Foundation Ac
 - **Inline text:** a short text field appears beside the answer choice and is required only when that choice is selected.
 - **Display order:** fixed as listed in this survey. Any later randomization must preserve ordered scales and the placement of terminal choices such as “None,” “Something else,” and “Not sure.”
 
-## Focal-system instruction
-
-For the rest of this survey, think of the AI agent system that reached a serious pilot or deployment and that you personally worked with most during the past six months. If two qualify equally, choose the one you worked with most recently. Answer every question about that same system.
-
 ## Entry and anchor
 
-### Q1 — Direct activities
+### Q1. Eligibility and real-world use
+
+- **Response:** Single select
+- **Required:** Yes
+- **Behavior:** The first five choices continue to the survey. The final three choices end the survey and record the response as screened out.
+
+**During the past six months, which best describes your firsthand experience with AI agent systems?**
+
+If more than one system reached real-world use, answer about the one you worked with most. If two qualify equally, choose the one you worked with most recently.
+
+- Serious pilot: Being tried with real data or intended users for real work, but not yet part of normal work
+- Limited deployment: Part of normal work for some intended users or workflows
+- Broad deployment: Part of normal work for most intended users or workflows
+- Paused or retired: Previously reached a serious pilot or deployment
+- Real-world use, stage not sure: Used for real work, but I am not sure which stage fits
+- Demo, prototype, or generic research only: No system reached real-world use
+- Secondhand knowledge only: Knew about a system used for real work but did not personally work with it
+- No relevant system experience
+
+**Focal-system instruction**
+
+For the rest of this survey, answer about the same system you had in mind for Q1 and your experience with it during the past six months. When a question asks about the system or organization at a particular point, answer based on the last time you worked with it.
+
+### Q2. Direct activities
 
 - **Response:** Multi-select
 - **Required:** Yes
-- **Behavior:** “None of these” is exclusive. Selecting it and continuing ends the survey and records the response as screened out rather than incomplete.
 
 **Which activities have you personally performed with this system during the past six months? Select all that apply.**
 
@@ -36,28 +54,14 @@ For the rest of this survey, think of the AI agent system that reached a serious
 - Reviewed, corrected, or approved its outputs or actions
 - Used its outputs or relied on its actions in my work
 - Made product or operational decisions using firsthand evidence about it
-- None of these
 
-### Q2 — Real-world use
-
-- **Response:** Single select
-- **Required:** Yes
-
-**When you last worked with this system, how widely was it being used for real work?**
-
-- Serious pilot — being tried with real data or intended users, but not yet part of normal work
-- Limited deployment — part of normal work for some intended users or workflows
-- Broad deployment — part of normal work for most intended users or workflows
-- Paused or retired after reaching a serious pilot or deployment
-- Not sure
-
-### Q3 — Primary area of work
+### Q3. Primary area of work
 
 - **Response:** Single select
 - **Required:** Yes
-- **Inline text:** Required when “Something else—describe briefly” is selected.
+- **Inline text:** Required when “Something else (describe briefly)” is selected.
 
-**When you last worked with this system, which area of work was its primary use? Choose the closest answer.**
+**Which area of work was this system’s primary use? Choose the closest answer.**
 
 - Customer or employee service
 - Research and knowledge work
@@ -67,12 +71,41 @@ For the rest of this survey, think of the AI agent system that reached a serious
 - Analysis, planning, or decision support
 - Risk, compliance, quality, or evaluation
 - Business operations or transactions
-- Something else—describe briefly
+- Something else (describe briefly)
 - Not sure
+
+### Q4. System structure
+
+- **Response:** Single select
+- **Required:** Yes
+- **Inline text:** Required when “Something else (describe briefly)” is selected.
+
+**Which best describes how this system completed a typical task? Choose the closest answer.**
+
+- A single AI response: Produced an answer, draft, or label from information supplied to it without choosing subsequent steps, calling other software, or taking actions
+- One AI agent: Chose the steps needed to complete the task and could search, run code, call other software, or update records without handing work to another AI agent
+- Multiple AI agents: Two or more AI agents coordinated, delegated, handed off, or checked one another’s work
+- A preset automated workflow with AI steps: AI performed one or more steps in a preprogrammed sequence, while software or fixed rules determined what happened next
+- Something else (describe briefly)
+- Not sure
+
+### Q5. Organization size
+
+- **Response:** Single select
+- **Required:** Yes
+
+**Approximately how many employees or regular staff worked at the organization where this system was primarily used for real work? If you worked with it for a client or customer, answer about that organization rather than your own.**
+
+- 1 to 99
+- 100 to 999
+- 1,000 or more
+- The system was used across several organizations or customers (no single organization applies)
+- Not sure
+- Prefer not to answer
 
 ## Adoption and general concerns
 
-### Q4 — Constraints
+### Q6. Constraints
 
 - **Response:** Single-response matrix
 - **Required:** Yes; one response for every factor row
@@ -103,23 +136,7 @@ Scale:
 5. Stopped or reversed progress
 6. Not enough visibility
 
-### Q5 — Adoption consequence
-
-- **Response:** Single select
-- **Required:** Yes
-- **Scale order:** Fixed as listed
-
-**During the past six months, what was the most significant effect these constraints had on adoption or continued use of the system?**
-
-- No meaningful effect
-- Work continued, but required additional effort, safeguards, or human checking
-- Launch, expansion, or planned improvements were delayed
-- Planned users, use cases, capabilities, or autonomy were reduced
-- Development, expansion, or use was paused but may resume
-- The system or affected use case was stopped or abandoned
-- Not enough visibility
-
-### Q6 — Human checking
+### Q7. Human checking
 
 - **Response:** Single select
 - **Required:** Yes
@@ -135,11 +152,11 @@ Scale:
 - Practices varied too much to identify one pattern
 - Not enough visibility
 
-### Q7 — Most significant benefit
+### Q8. Most significant benefit
 
 - **Response:** Single select
 - **Required:** Yes
-- **Inline text:** Required when “Something else—describe briefly” is selected.
+- **Inline text:** Required when “Something else (describe briefly)” is selected.
 
 **During the past six months, what was the most significant benefit this system delivered in real work?**
 
@@ -150,12 +167,12 @@ Scale:
 - Improved responsiveness or availability
 - Produced no meaningful additional benefit
 - Too early to tell
-- Something else—describe briefly
+- Something else (describe briefly)
 - Not enough visibility
 
 ## Accuracy and reliability
 
-### Q8 — Frequency of unacceptable results
+### Q9. Frequency of unacceptable results
 
 - **Response:** Single select
 - **Required:** Yes
@@ -164,14 +181,14 @@ Scale:
 **During the past six months, when this system was used for real work, roughly how often did it produce a result or action that was unacceptable for its intended use?**
 
 - Never or almost never
-- Rarely—a small minority of uses
+- Rarely (a small minority of uses)
 - Sometimes, but not in most uses
-- Often—a substantial share of uses
+- Often (a substantial share of uses)
 - In most or almost all uses
 - Varied too much across tasks to answer
 - Not enough visibility or use to answer
 
-### Q9 — Accuracy and reliability factors
+### Q10. Accuracy and reliability factors
 
 - **Response:** Single-response matrix
 - **Required:** Yes; one response for every factor row
@@ -198,7 +215,7 @@ Scale:
 5. Caused use to be restricted, paused, or stopped
 6. Not enough visibility
 
-### Q10 — Recognition before impact
+### Q11. Recognition before impact
 
 - **Response:** Single select
 - **Required:** Yes
@@ -214,11 +231,11 @@ Scale:
 - No unacceptable results or actions were known
 - Not enough visibility
 
-### Q11 — Most serious consequence
+### Q12. Most serious consequence
 
 - **Response:** Single select
 - **Required:** Yes
-- **Inline text:** Required when “Something else—describe briefly” is selected.
+- **Inline text:** Required when “Something else (describe briefly)” is selected.
 
 **During the past six months, what was the most serious consequence you know occurred because of an accuracy or reliability problem with this system?**
 
@@ -230,10 +247,10 @@ Scale:
 - Substantial additional cost or direct financial loss occurred
 - A security, privacy, legal, compliance, or safety issue occurred
 - Use of the system was restricted, paused, or stopped
-- Something else—describe briefly
+- Something else (describe briefly)
 - Not enough visibility
 
-### Q12 — Primary quality evidence
+### Q13. Primary quality evidence
 
 - **Response:** Single select
 - **Required:** Yes
@@ -250,11 +267,11 @@ Scale:
 
 ## Priorities and close
 
-### Q13 — Shared-industry priority
+### Q14. Shared-industry priority
 
 - **Response:** Single select
 - **Required:** Yes
-- **Inline text:** Required when “Something else—describe briefly” is selected.
+- **Inline text:** Required when “Something else (describe briefly)” is selected.
 
 **Based on your experience with this system, which accuracy or reliability problem most needs shared industry work?**
 
@@ -265,15 +282,15 @@ Scale:
 - Handling failures in tools, data, or dependencies
 - Managing uncertainty and involving people at the right time
 - Detecting and learning from production failures
-- Something else—describe briefly
+- Something else (describe briefly)
 - No shared industry work is needed
 - Not sure
 
-### Q14 — Preferred ARWG output
+### Q15. Preferred ARWG output
 
 - **Response:** Single select
 - **Required:** Yes
-- **Inline text:** Required when “Something else—describe briefly” is selected.
+- **Inline text:** Required when “Something else (describe briefly)” is selected.
 
 **Which one vendor-neutral ARWG output would most help people working with systems like this one?**
 
@@ -284,11 +301,11 @@ Scale:
 - Monitoring and incident-learning guidance
 - Worked examples and case studies
 - A quality or conformance framework
-- Something else—describe briefly
+- Something else (describe briefly)
 - None of these
 - Not sure
 
-### Q15 — Optional close
+### Q16. Optional close
 
 - **Response:** One short text response
 - **Required:** No
