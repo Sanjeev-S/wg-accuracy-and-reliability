@@ -46,7 +46,7 @@ For the rest of this survey, answer about the same system you had in mind for Q1
 - **Response:** Multi-select
 - **Required:** Yes
 
-**Which activities have you personally performed with this system during the past six months? Select all that apply.**
+**Which activities have you personally performed with this system? Select all that apply.**
 
 - Designed, built, configured, or integrated it
 - Tested or evaluated its quality
@@ -134,7 +134,7 @@ Scale:
 3. Slowed progress somewhat
 4. Slowed progress substantially
 5. Stopped or reversed progress
-6. Not enough visibility
+6. Not sure
 
 ### Q7. Human checking
 
@@ -142,7 +142,7 @@ Scale:
 - **Required:** Yes
 - **Display order:** Fixed as listed
 
-**During the past six months, which best describes how meaningful human checking was applied to this system’s outputs or actions before they were relied on or allowed to stand?**
+**Which best describes how meaningful human checking was applied to this system’s outputs or actions before they were relied on or allowed to stand?**
 
 - No routine human checking
 - Occasional spot checks
@@ -150,7 +150,7 @@ Scale:
 - Checking mainly for high-risk cases
 - Most or all outputs received a substantive review
 - Practices varied too much to identify one pattern
-- Not enough visibility
+- Not sure
 
 ### Q8. Most significant benefit
 
@@ -158,7 +158,7 @@ Scale:
 - **Required:** Yes
 - **Inline text:** Required when “Something else (describe briefly)” is selected.
 
-**During the past six months, what was the most significant benefit this system delivered in real work?**
+**What was the most significant benefit this system delivered in real work?**
 
 - Completed roughly the same work faster or with less effort
 - Handled more work, cases, or users
@@ -168,7 +168,7 @@ Scale:
 - Produced no meaningful additional benefit
 - Too early to tell
 - Something else (describe briefly)
-- Not enough visibility
+- Not sure
 
 ## Accuracy and reliability
 
@@ -186,7 +186,7 @@ Scale:
 - Often (a substantial share of uses)
 - In most or almost all uses
 - Varied too much across tasks to answer
-- Not enough visibility or use to answer
+- Not sure
 
 ### Q10. Accuracy and reliability factors
 
@@ -195,7 +195,7 @@ Scale:
 - **Row order:** Fixed as listed
 - **Scale order:** Fixed as listed
 
-**During the past six months, how much did each of the following accuracy or reliability problems affect the system’s usefulness or continued use?**
+**How much did each of the following accuracy or reliability problems affect the system’s usefulness or continued use?**
 
 Factors:
 
@@ -213,7 +213,7 @@ Scale:
 3. Reduced usefulness somewhat
 4. Reduced usefulness substantially
 5. Caused use to be restricted, paused, or stopped
-6. Not enough visibility
+6. Not sure
 
 ### Q11. Recognition before impact
 
@@ -221,7 +221,7 @@ Scale:
 - **Required:** Yes
 - **Scale order:** Fixed as listed
 
-**During the past six months, among the unacceptable results or actions you know about, how often was the problem recognized before it affected real work?**
+**Among the unacceptable results or actions you know about, how often was the problem recognized before it affected real work?**
 
 - Every or almost every time
 - Most of the time
@@ -229,7 +229,7 @@ Scale:
 - Some of the time, but fewer than half
 - Few or none of the time
 - No unacceptable results or actions were known
-- Not enough visibility
+- Not sure
 
 ### Q12. Most serious consequence
 
@@ -237,7 +237,7 @@ Scale:
 - **Required:** Yes
 - **Inline text:** Required when “Something else (describe briefly)” is selected.
 
-**During the past six months, what was the most serious consequence you know occurred because of an accuracy or reliability problem with this system?**
+**What was the most serious consequence you know occurred because of an accuracy or reliability problem with this system?**
 
 - No accuracy or reliability problem was known
 - The problem was corrected before affecting real work
@@ -248,14 +248,14 @@ Scale:
 - A security, privacy, legal, compliance, or safety issue occurred
 - Use of the system was restricted, paused, or stopped
 - Something else (describe briefly)
-- Not enough visibility
+- Not sure
 
 ### Q13. Primary quality evidence
 
 - **Response:** Single select
 - **Required:** Yes
 
-**During the past six months, which source of evidence had the greatest influence on decisions about whether this system’s quality was acceptable?**
+**Which source of evidence had the greatest influence on decisions about whether this system’s quality was acceptable?**
 
 - Informal human judgment or spot checks
 - A repeatable collection of examples or test cases
@@ -263,7 +263,7 @@ Scale:
 - Production monitoring or incident evidence
 - Real-world user, task, or business outcomes
 - No consistent approach
-- Not enough visibility
+- Not sure
 
 ## Priorities and close
 
